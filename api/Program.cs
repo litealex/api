@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
+using System.Threading;
 
 namespace api
 {
@@ -7,12 +8,11 @@ namespace api
 	{
 		public static void Main (string[] args)
 		{
-
-
 			using (WebApp.Start<Startup> ("http://localhost:5000")) {
-				
 				Console.WriteLine ("Server started");
-				Console.ReadLine ();
+				while (true) {
+					Thread.Sleep (200);
+				}
 			}
 		}
 	}
