@@ -12,10 +12,9 @@ RUN apt-get update \
 
 
 
-EXPOSE 5000
-
 CMD ./tmp/start.sh
 
+EXPOSE 5000
 
 
 

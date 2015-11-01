@@ -8,7 +8,7 @@ namespace api
 	{
 		public static void Main (string[] args)
 		{
-			using (WebApp.Start<Startup> ("http://localhost:5000")) {
+			using (WebApp.Start<Startup> ("http://*:5000")) {
 				Console.WriteLine ("Server started");
 				while (true) {
 					Thread.Sleep (200);
